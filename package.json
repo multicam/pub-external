@@ -2,16 +2,24 @@
   "name": "pub-external",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel *.js"
+    "dev": "parcel js/*.js styles/*.scss",
+    "build": "parcel build js/*.js styles/*.scss",
+    "build:prod": "parcel build js/*.js styles/*.scss --no-source-maps --no-cache",
+    "compress": "parcel build js/*.js styles/*.scss --no-source-maps --no-cache --experimental-compress",
+    "compress:prod": "parcel build js/*.js styles/*.scss --no-source-maps --no-cache --experimental-compress"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "@parcel/compressor-brotli": "^2.12.0",
+    "@parcel/compressor-gzip": "^2.12.0",
+    "@parcel/config-default": "^2.12.0",
+    "parcel": "^2.12.0",
+    "sass": "^1.80.4"
+  },
   "devDependencies": {
-    "parcel": "^2.12.0"
+    "@parcel/transformer-sass": "2.12.0"
   }
-
 }
