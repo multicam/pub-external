@@ -1,1 +1,0 @@
-{"mappings":"AACE","sources":["styles/app.scss"],"sourcesContent":[".some {\n  .other-class {\n    color: red;\n  }\n}"],"names":[],"version":3,"file":"app.css.map","sourceRoot":"/__parcel_source_root/"}
